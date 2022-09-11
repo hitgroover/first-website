@@ -44,3 +44,179 @@
          url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/montserrat-v25-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+
+  body {
+     font-family: Montserrat, sans-serif;
+     color: #ffffff;
+  }
+
+  main, footer {
+     background-color: #252B42;
+  }
+
+  /* Preview */
+  .preview {
+     background-image: url(/images/header-background.jpg);
+     background-repeat: no-repeat;
+  }
+
+  .logo {
+     color: inherit;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 32px;
+     text-decoration: none;
+  }
+
+  .menu-items {
+     color: inherit;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     text-decoration: none;
+  }
+
+  .slogan {
+     font-weight: 800;
+     font-size: 58px;
+     line-height: 80px;
+     letter-spacing: 0.2px;
+  }
+
+  .preview-text {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 30px;
+  }
+
+.preview-btn {
+     color: inherit;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 28px;
+     text-decoration: none;
+}
+
+/* Advantages */
+h2[class$="-text-main"] {
+     font-weight: 700;
+     font-size: 40px;
+     line-height: 57px;
+     letter-spacing: 0.2px;
+}
+
+.problems-in-all {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 20px;
+}
+
+.card-name{
+     color: #252B42;
+     background-color: #8EC2F2;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+}
+
+.card-description {
+     color: #737373;
+     background-color: #fff;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+}
+
+.card-more {
+     color: #00A0C1;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     text-decoration: none;
+}
+
+/* Team */
+.member-info {
+     background-color: #fff;
+}
+
+.member-name {
+     color: #252B42;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+}
+
+.member-post {
+     color: #737373;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+}
+
+/* Order */
+.order {
+     background-image: url(/images/order-background.jpg);
+     background-repeat: no-repeat;
+}
+
+/* Consult promo */
+.consult-promo {
+     background-color: #fff;
+}
+
+.consult {
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 32px;
+     letter-spacing: 0.1px;
+     color: #252B42;
+}
+
+.consult-idiom{
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: 0.2px;
+     color: #737373; 
+}
+
+/* Footer */
+.footer-info-title {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.1px;
+}
+
+.title-more-item {
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.2px;
+     color: #BDBDBD;
+}
+
+.lorem {
+     font-weight: 600;
+     font-size: 12px;
+     line-height: 28px;
+     letter-spacing: 0.2px;
+     color: #BDBDBD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
