@@ -23,23 +23,29 @@
                 </nav>
             </header>
             <div class="preview-wrap">
-                <h2 class="slogan">We Take Care of the Future</h2>
-                <p class="preview-text">We know how large objects will act, but things on a small scale.</p>
-                <a href="#" class="preview-btn fill">Get Quote Now</a>
-                <a href="#" class="preview-btn">Learn More</a>
+                <div class="preview-text-side">
+                    <h2 class="slogan">We Take Care of the Future</h2>
+                    <p class="preview-text">We know how large objects will act, but things on a small scale.</p>
+                    <div class="btn-flex">
+                        <a href="#" class="preview-btn">Get Quote Now</a>
+                        <a href="#" class="preview-btn empty">Learn More</a>
+                    </div>
+                </div>
+                <div class="preview-form">
                 <form action="#" method="post">
+                    <label for="form" class="form-name">Book Appointment</label>
                     <div>
                       <label for="name">Name*</label>
-                      <input type="text" id="name" name="user_name">
+                      <input type="text" id="name" name="user_name" placeholder="Full Name">
                     </div>
                   
                     <div>
                       <label for="mail">Email*</label>
-                      <input type="email" id="mail" name="user_email">
+                      <input type="email" id="mail" name="user_email" placeholder="example@gmail.com">
                     </div>
                   
                     <label for="department">Department*</label>
-                    <input type="text" name="department" id="department" list="suggestion">
+                    <input type="text" name="department" id="department" list="suggestion" placeholder="Please Select">
                     <datalist id="suggestion">
                         <option>Please Select</option>
                         <option>Please Select</option>
@@ -47,7 +53,7 @@
                     </datalist>
 
                     <label for="time">Time*</label>
-                    <input type="text" name="time" id="time" list="time-suggestion">
+                    <input type="text" name="time" id="time" list="time-suggestion" placeholder="4:00 Available">
                     <datalist id="time-suggestion">
                         <option>4:00 Available</option>
                         <option>4:00 Available</option>
@@ -55,9 +61,10 @@
                     </datalist>
                   
                     <div class="button">
-                      <button type="submit">Book Appointment</button>
+                      <button class="btn" type="submit">Book Appointment</button>
                     </div>
                   </form>
+                </div>
             </div>
 
         </div>
@@ -209,21 +216,21 @@
             <p class="contact">Contact Us</p>
             <h2 class="order-text-main">Make an Appointment</h2>
             <div>
-                <input type="text" id="name" name="user_name">
+                <input type="text" id="name" name="user_name" placeholder="Full Name">
               </div>
             
               <div>
-                <input type="email" id="mail" name="user_email">
+                <input type="email" id="mail" name="user_email" placeholder="example@gmail.com">
               </div>
             
-              <input type="text" name="department" id="department" list="suggestion">
+              <input type="text" name="department" id="department" list="suggestion" placeholder="Please Select">
               <datalist id="suggestion">
                   <option>Please Select</option>
                   <option>Please Select</option>
                   <option>Please Select</option>
               </datalist>
 
-              <input type="text" name="time" id="time" list="time-suggestion">
+              <input type="text" name="time" id="time" list="time-suggestion" placeholder="4:00 Available">
               <datalist id="time-suggestion">
                   <option>4:00 Available</option>
                   <option>4:00 Available</option>
@@ -231,11 +238,11 @@
               </datalist>
 
               <div>
-                <textarea id="msg" name="user_message"></textarea>
+                <textarea id="msg" name="user_message" placeholder="Message"></textarea>
               </div>
             
               <div class="button">
-                <button type="submit">Book Appointment</button>
+                <button class="btn" type="submit">Book Appointment</button>
               </div>
             </form>
          </div>
