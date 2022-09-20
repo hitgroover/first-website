@@ -1,79 +1,92 @@
 /* Fonts */
 /* montserrat-regular - latin */
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-600 - latin */
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: local(''),
-         url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-500 - latin */
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
-         url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-700 - latin */
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-800 - latin */
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    src: local(''),
-         url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  body {
+/* montserrat-600 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 600;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-600.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 500;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-500.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-700.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-800 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 800;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-800.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
      font-family: Montserrat, sans-serif;
      color: #ffffff;
      margin: 0px;
-  }
+     padding: 0px;
+     box-sizing: border-box;
+}
 
-  main, footer {
+main,
+footer {
      background-color: #252B42;
-  }
+}
 
-  /* Preview */
-  .preview {
+/* Preview */
+.preview {
      background-image: url(/images/header-background.jpg);
      background-repeat: no-repeat;
-  }
+}
 
-  .header {
-     width: 1322px;
-     margin-left: 59px;
-     margin-right: 59px;
-  }
 
-  .navigation {
+.navigation {
      display: flex;
      flex-direction: row;
-     padding-left: 136px;
-  }
+     margin: 0 195px;
+     width: 1050px;
+}
 
-  .logo {
+.logo {
      padding: 13px 66px 13px 0;
      margin-top: 23px;
      margin-bottom: 23px;
@@ -82,30 +95,32 @@
      font-size: 24px;
      line-height: 32px;
      text-decoration: none;
-  }
+}
 
-  .navigation-menu {
+.navigation-menu {
      list-style-type: none;
      display: flex;
-     margin: 0;
+     margin: 0 0 0 auto;
      padding: 0;
      align-items: center;
-  }
+}
 
-  .menu-items {
+.menu-items {
      color: inherit;
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
      text-decoration: none;
-  }
+     margin: 0 10.5px;
+}
 
-  .preview-wrap {
+.preview-wrap {
      display: flex;
      width: 1050px;
      margin-left: 195px;
      margin-right: 195px;
-  }
+     padding-bottom: 50px;
+}
 
 .preview-text-side {
      box-sizing: border-box;
@@ -115,28 +130,28 @@
      margin-right: 120px;
 }
 
-  .slogan {
+.slogan {
      font-weight: 800;
      font-size: 58px;
      line-height: 80px;
      letter-spacing: 0.2px;
      padding-bottom: 35px;
      margin: 0px;
-  }
+}
 
-  .preview-text {
+.preview-text {
      width: 376px;
      height: 60px;
      font-weight: 500;
      font-size: 20px;
      line-height: 30px;
      margin: 0px;
-  }
+}
 
-  .btn-flex {
+.btn-flex {
      display: flex;
      flex-direction: row;
-  }
+}
 
 .preview-btn {
      color: inherit;
@@ -159,15 +174,19 @@
      border: 1px solid #ffffff;
 }
 
-.preview-form {
+.preview-form-container {
      color: #252B42;
-     width: 350px;
+     width: 248px;
      background-color: #fff;
      border-radius: 10px;
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 40px;
+     padding: 40px 40px 0 40px;
+}
+
+.preview-form {
+     width: 248px;
 }
 
 .form-name {
@@ -179,8 +198,44 @@
      letter-spacing: 0.1px;
 }
 
+label {
+     display: block;
+     height: 24px;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.2px;
+     margin-top: 5px;
+}
+
+input {
+     font-family: inherit;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 28px;
+     letter-spacing: 0.2px;
+     color: #737373;
+     padding-top: 11px;
+     padding-bottom: 11px;
+     padding-left: 21px;
+     margin-top: 12px;
+     border: 1px solid #BDBDBD;
+     border-radius: 5px;
+}
+
+.name-graph {
+     margin-top: 40px;
+}
+
+div[class$="-graph"] {
+     display: flex;
+     flex-direction: column;
+}
+
+
 .btn {
      color: #FFFFFF;
+     font-family: inherit;
      font-weight: 700;
      font-size: 14px;
      line-height: 28px;
@@ -190,6 +245,7 @@
      flex-direction: column;
      align-items: center;
      padding: 15px 40px;
+     margin-top: 40px;
      gap: 10px;
      width: 248px;
      height: 58px;
@@ -199,6 +255,13 @@
 }
 
 /* Advantages */
+div[class$="-text-auto"] {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 80px 0px;
+}
+
 h2[class$="-text-main"] {
      font-weight: 700;
      font-size: 40px;
@@ -207,14 +270,28 @@ h2[class$="-text-main"] {
 }
 
 .problems-in-all {
+     width: 470px;
+     text-align: center;
      font-weight: 500;
      font-size: 14px;
      line-height: 20px;
+     margin: 0;
 }
 
-.card-name{
-     color: #252B42;
+.card-item {
+     list-style-type: none;
+}
+
+.card-head-part {
      background-color: #8EC2F2;
+}
+
+.card-bottom-part {
+     background-color: #fff;
+}
+
+.card-name {
+     color: #252B42;
      font-weight: 700;
      font-size: 16px;
      line-height: 24px;
@@ -274,12 +351,12 @@ h2[class$="-text-main"] {
      color: #252B42;
 }
 
-.consult-idiom{
+.consult-idiom {
      font-weight: 500;
      font-size: 14px;
      line-height: 20px;
      letter-spacing: 0.2px;
-     color: #737373; 
+     color: #737373;
 }
 
 /* Footer */
@@ -305,19 +382,3 @@ h2[class$="-text-main"] {
      letter-spacing: 0.2px;
      color: #BDBDBD;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

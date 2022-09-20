@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>home-project</title>
@@ -31,34 +31,38 @@
                         <a href="#" class="preview-btn empty">Learn More</a>
                     </div>
                 </div>
-                <div class="preview-form">
-                <form action="#" method="post">
+                <div class="preview-form-container">
+                <form class="preview-form" action="#" method="post">
                     <label for="form" class="form-name">Book Appointment</label>
-                    <div>
-                      <label for="name">Name*</label>
+                    <div class="name-graph">
+                      <label for="name"><strong>Name*</strong></label>
                       <input type="text" id="name" name="user_name" placeholder="Full Name">
                     </div>
                   
-                    <div>
-                      <label for="mail">Email*</label>
+                    <div class="mail-graph">
+                      <label for="mail"><strong>Email*</strong></label>
                       <input type="email" id="mail" name="user_email" placeholder="example@gmail.com">
                     </div>
                   
-                    <label for="department">Department*</label>
-                    <input type="text" name="department" id="department" list="suggestion" placeholder="Please Select">
-                    <datalist id="suggestion">
-                        <option>Please Select</option>
-                        <option>Please Select</option>
-                        <option>Please Select</option>
-                    </datalist>
-
-                    <label for="time">Time*</label>
-                    <input type="text" name="time" id="time" list="time-suggestion" placeholder="4:00 Available">
-                    <datalist id="time-suggestion">
-                        <option>4:00 Available</option>
-                        <option>4:00 Available</option>
-                        <option>4:00 Available</option>
-                    </datalist>
+                    <div class="dep-graph">
+                        <label for="department"><strong>Department*</strong></label>
+                        <input type="text" name="department" id="department" list="suggestion" placeholder="Please Select">
+                        <datalist id="suggestion">
+                            <option>Please Select</option>
+                            <option>Please Select</option>
+                            <option>Please Select</option>
+                        </datalist>
+                    </div>
+                    
+                    <div class="time-graph">
+                        <label for="time"><strong>Time*</strong></label>
+                        <input type="text" name="time" id="time" list="time-suggestion" placeholder="4:00 Available">
+                        <datalist id="time-suggestion">
+                            <option>4:00 Available</option>
+                            <option>4:00 Available</option>
+                            <option>4:00 Available</option>
+                        </datalist>
+                    </div>
                   
                     <div class="button">
                       <button class="btn" type="submit">Book Appointment</button>
@@ -70,13 +74,18 @@
         </div>
 
         <div class="advantages">
+            <div  class="advantages-text-auto">
             <h2 class="advantages-text-main">WHY CHOOSE US</h2>
             <p class="problems-in-all">Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics</p>
-            <ul class="cards">
+            </div>
+                <ul class="cards">
                 <li class="card-item">
-                    <img src="" alt="" class="card-logo">
+                    <div class="card-head-part">
+                    <img src="/images/community.svg" alt="" class="card-logo">
                     <p class="card-name">Web Development</p>
+                    </div>
+                    <div class="card-bottom-part">
                     <span class="card-description">-  The best products start 
                         with Figma
                         - Design with real data
@@ -84,11 +93,14 @@
                         - Fastest way to organize
                         - Work at the speed of thought.
                         <a href="#" class="card-more">Learn More</a></span>
-                    
+                    </div>
                 </li>
                 <li class="card-item">
-                    <img src="" alt="" class="card-logo">
+                    <div class="card-head-part">
+                    <img src="/images/prise.svg" alt="" class="card-logo">
                     <p class="card-name">National top 50 firms</p>
+                    </div>
+                    <div class="card-bottom-part">
                     <span class="card-description">-  The best products start 
                         with Figma
                         - Design with real data
@@ -97,11 +109,14 @@
                         - Work at the speed of thought.
                         <a href="#" class="card-more">Learn More</a>
                     </span>
-                    
+                    </div>
                 </li>
                 <li class="card-item">
-                    <img src="" alt="" class="card-logo">
+                    <div class="card-head-part">
+                    <img src="/images/book.svg" alt="" class="card-logo">
                     <p class="card-name">Digital Marketing</p>
+                    </div>
+                    <div class="card-bottom-part">
                     <span class="card-description">-  The best products start 
                         with Figma
                         - Design with real data
@@ -109,23 +124,28 @@
                         - Fastest way to organize
                         - Work at the speed of thought.
                         <a href="#" class="card-more">Learn More</a>
+                     </div>
                     </span>
                 </li>
             </ul>
         </div>
 
         <div class="services">
+            <div class="services-text-auto">
             <h2 class="services-text-main">We are providing best business service.</h2>
             <p class="problems-in-all">Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics</p>
-            <video src="https://youtu.be/8F2s8ivKXNY"></video>
+            </div>
+                <video src="https://youtu.be/8F2s8ivKXNY"></video>
         </div>
 
         <div class="responses">
-            <h2 class="responses-text-main">What Clients Say</h2>
-            <p class="problems-in-all">Problems trying to resolve the conflict between 
+            <div class="responses-text-auto">
+                <h2 class="responses-text-main">What Clients Say</h2>
+                <p class="problems-in-all">Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics</p>
-            <div class="responses-pic">
+            </div>
+                <div class="responses-pic">
                 <img src="/images/responses1.jpg" alt="" class="response">
                 <img src="/images/responses2.jpg" alt="" class="response">
                 <img src="/images/responses3.jpg" alt="" class="response">
@@ -133,10 +153,12 @@
         </div>
 
         <div class="team">
+            <div class="team-text-auto">
             <h2 class="team-text-main">Meet Our Team</h2>
             <p class="problems-in-all">Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics</p>
-            <ul class="our-team">
+            </div>
+                <ul class="our-team">
                 <li class="team-member">
                     <img src="/images/team1.jpg" alt="" class="member=photo">
                     <div class="member-info">
