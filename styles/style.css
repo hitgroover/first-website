@@ -65,6 +65,7 @@ body {
      margin: 0px;
      padding: 0px;
      box-sizing: border-box;
+     /* max-width: 1440px; */
 }
 
 main,
@@ -72,10 +73,20 @@ footer {
      background-color: #252B42;
 }
 
+h2 {
+     margin: 0;
+}
+
+ul {
+     margin: 0;
+     padding: 0;
+}
+
 /* Preview */
 .preview {
      background-image: url(/images/header-background.jpg);
      background-repeat: no-repeat;
+     background-size: cover;
 }
 
 
@@ -255,11 +266,13 @@ div[class$="-graph"] {
 }
 
 /* Advantages */
+
+
 div[class$="-text-auto"] {
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 80px 0px;
+     margin: 80px 93px;
 }
 
 h2[class$="-text-main"] {
@@ -267,6 +280,7 @@ h2[class$="-text-main"] {
      font-size: 40px;
      line-height: 57px;
      letter-spacing: 0.2px;
+     margin-bottom: 10px;
 }
 
 .problems-in-all {
@@ -278,16 +292,46 @@ h2[class$="-text-main"] {
      margin: 0;
 }
 
+.cards {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 30px;
+     width: 1050px;
+     margin-left: 195px;
+     margin-right: 195px;
+     padding-bottom: 80px;
+
+}
+
 .card-item {
      list-style-type: none;
+     border-radius: 10px;
+     background-color: #d9edff;
+     width: 328px;
 }
 
 .card-head-part {
-     background-color: #8EC2F2;
+     background-color: #d9edff;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     border-radius: 10px;
+     padding: 30px;
 }
 
 .card-bottom-part {
      background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 30px;
+     border: 1px solid #8ec2f2;
+     border-radius: 11px;
+}
+
+.card-logo {
+     padding-right: 15px;
 }
 
 .card-name {
@@ -295,6 +339,7 @@ h2[class$="-text-main"] {
      font-weight: 700;
      font-size: 16px;
      line-height: 24px;
+     margin: 0;
 }
 
 .card-description {
@@ -303,6 +348,7 @@ h2[class$="-text-main"] {
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
+     border-radius: 11px;
 }
 
 .card-more {
