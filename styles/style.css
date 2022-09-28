@@ -96,7 +96,7 @@ ul {
      display: flex;
      flex-direction: row;
      margin: 0 195px;
-     width: 1050px;
+     width: 73%;
 }
 
 .logo {
@@ -129,18 +129,17 @@ ul {
 
 .preview-wrap {
      display: flex;
-     width: 1050px;
-     margin-left: 195px;
-     margin-right: 195px;
+     width: 73%;
+     margin: auto;
      padding-bottom: 50px;
 }
 
 .preview-text-side {
      box-sizing: border-box;
-     width: 600px;
+     width: 57%;
      margin-top: 140.5px;
      margin-bottom: 140.5px;
-     margin-right: 120px;
+     margin-right: auto;
 }
 
 .slogan {
@@ -153,7 +152,7 @@ ul {
 }
 
 .preview-text {
-     width: 376px;
+     width: 61%;
      height: 60px;
      font-weight: 500;
      font-size: 20px;
@@ -161,7 +160,7 @@ ul {
      margin: 0px;
 }
 
-.btn-flex {
+.preview-btn-container {
      display: flex;
      flex-direction: row;
 }
@@ -268,13 +267,16 @@ div[class$="-graph"] {
 }
 
 /* Advantages */
-
+div[class$="-section"]  {
+     padding-top: 80px;
+     margin: auto;
+}
 
 div[class$="-text-auto"] {
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin: 80px 93px;
+     margin: 0px 93px 80px;
 }
 
 h2[class$="-text-main"] {
@@ -286,7 +288,7 @@ h2[class$="-text-main"] {
 }
 
 .problems-in-all {
-     width: 470px;
+     width: 54%;
      text-align: center;
      font-weight: 500;
      font-size: 14px;
@@ -299,7 +301,7 @@ h2[class$="-text-main"] {
      flex-direction: row;
      align-items: center;
      gap: 30px;
-     width: 1050px;
+     width: 100%;
      margin-left: 195px;
      margin-right: 195px;
      padding-bottom: 80px;
@@ -415,7 +417,8 @@ h2[class$="-text-main"] {
      letter-spacing: 0.1px;
 }
 
-.title-more-item {
+.title-more-link {
+     text-decoration: none;
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
