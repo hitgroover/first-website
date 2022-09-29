@@ -1,0 +1,435 @@
+/* Fonts */
+/* montserrat-regular - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 600;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-600.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 500;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-500.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-700.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-800 - latin */
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 800;
+     src: local(''),
+          url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/montserrat-v25-latin-800.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+     font-family: Montserrat, sans-serif;
+     color: #ffffff;
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     background-color: #252B42;
+     min-width: 1280px;
+     /* TODO: make with @media */
+}
+
+.content-wrapper {
+     max-width: 1440px;
+     margin: 0 auto;
+}
+
+h2 {
+     margin: 0;
+}
+
+ul {
+     margin: 0;
+     padding: 0;
+}
+
+/* Preview */
+.preview {
+     background-image: url(/images/header-background.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+.navigation {
+     display: flex;
+     flex-direction: row;
+     margin: 0 195px;
+     width: 73%;
+}
+
+.logo {
+     padding: 13px 66px 13px 0;
+     margin-top: 23px;
+     margin-bottom: 23px;
+     color: inherit;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 32px;
+     text-decoration: none;
+}
+
+.navigation-menu {
+     list-style-type: none;
+     display: flex;
+     margin: 0 0 0 auto;
+     padding: 0;
+     align-items: center;
+}
+
+.menu-items {
+     color: inherit;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     text-decoration: none;
+     margin: 0 10.5px;
+}
+
+.preview-wrap {
+     display: flex;
+     width: 73%;
+     margin: auto;
+     padding-bottom: 50px;
+}
+
+.preview-text-side {
+     box-sizing: border-box;
+     width: 57%;
+     margin-top: 140.5px;
+     margin-bottom: 140.5px;
+     margin-right: auto;
+}
+
+.slogan {
+     font-weight: 800;
+     font-size: 58px;
+     line-height: 80px;
+     letter-spacing: 0.2px;
+     padding-bottom: 35px;
+     margin: 0px;
+}
+
+.preview-text {
+     width: 61%;
+     height: 60px;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 30px;
+     margin: 0px;
+}
+
+.preview-btn-container {
+     display: flex;
+     flex-direction: row;
+}
+
+.preview-btn {
+     color: inherit;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 28px;
+     text-decoration: none;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px 36px;
+     margin-top: 35px;
+     background: #FFA62B;
+     border-radius: 37px;
+}
+
+.empty {
+     margin-left: 10px;
+     background: none;
+     border: 1px solid #ffffff;
+}
+
+.preview-form-container {
+     color: #252B42;
+     width: 248px;
+     background-color: #fff;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 40px 0 40px;
+}
+
+.preview-form {
+     width: 248px;
+}
+
+.form-name {
+     display: block;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 32px;
+     text-align: center;
+     letter-spacing: 0.1px;
+}
+
+label {
+     display: block;
+     height: 24px;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.2px;
+     margin-top: 5px;
+}
+
+input {
+     font-family: inherit;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 28px;
+     letter-spacing: 0.2px;
+     color: #737373;
+     padding-top: 11px;
+     padding-bottom: 11px;
+     padding-left: 21px;
+     margin-top: 12px;
+     border: 1px solid #BDBDBD;
+     border-radius: 5px;
+}
+
+.name-graph {
+     margin-top: 40px;
+}
+
+div[class$="-graph"] {
+     display: flex;
+     flex-direction: column;
+}
+
+
+.btn {
+     color: #FFFFFF;
+     font-family: inherit;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 28px;
+     text-align: center;
+     letter-spacing: 0.2px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 15px 40px;
+     margin-top: 40px;
+     gap: 10px;
+     width: 248px;
+     height: 58px;
+     background: #FFA62B;
+     border-radius: 5px;
+     border: none;
+}
+
+/* Advantages */
+div[class$="-section"]  {
+     padding-top: 80px;
+     margin: auto;
+}
+
+div[class$="-text-auto"] {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0px 93px 80px;
+}
+
+h2[class$="-text-main"] {
+     font-weight: 700;
+     font-size: 40px;
+     line-height: 57px;
+     letter-spacing: 0.2px;
+     margin-bottom: 10px;
+}
+
+.problems-in-all {
+     width: 54%;
+     text-align: center;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 20px;
+     margin: 0;
+}
+
+.cards {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     width: 100%;
+     margin: 0 auto;
+     padding-bottom: 80px;
+
+}
+
+.card-item {
+     list-style-type: none;
+     border-radius: 10px;
+     background-color: #d9edff;
+     width: 328px;
+}
+
+.card-head-part {
+     background-color: #d9edff;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     border-radius: 10px;
+     padding: 30px;
+}
+
+.card-bottom-part {
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 30px;
+     border: 1px solid #8ec2f2;
+     border-radius: 11px;
+}
+
+.card-logo {
+     padding-right: 15px;
+}
+
+.card-name {
+     color: #252B42;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     margin: 0;
+}
+
+.card-description {
+     color: #737373;
+     background-color: #fff;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     border-radius: 11px;
+}
+
+.card-more {
+     color: #00A0C1;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     text-decoration: none;
+}
+
+/* Team */
+.member-info {
+     background-color: #fff;
+}
+
+.member-name {
+     color: #252B42;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+}
+
+.member-post {
+     color: #737373;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+}
+
+/* Order */
+.order {
+     background-image: url(/images/order-background.jpg);
+     background-repeat: no-repeat;
+}
+
+/* Consult promo */
+.consult-promo {
+     background-color: #fff;
+}
+
+.consult {
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 32px;
+     letter-spacing: 0.1px;
+     color: #252B42;
+}
+
+.consult-idiom {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: 0.2px;
+     color: #737373;
+}
+
+/* Footer */
+.footer-info-title {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.1px;
+}
+
+.title-more-link {
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.2px;
+     color: #BDBDBD;
+}
+
+.lorem {
+     font-weight: 600;
+     font-size: 12px;
+     line-height: 28px;
+     letter-spacing: 0.2px;
+     color: #BDBDBD;
+}
