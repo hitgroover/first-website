@@ -1,71 +1,80 @@
 /* Fonts */
+
 /* montserrat-regular - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 400;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-regular.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-600 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 600;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-600.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-600.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-600.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-500 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 500;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-500.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-500.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-700 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 700;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-700.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-700.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-800 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 800;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-800.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-800.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-800.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+     margin: 0;
+     padding: 0;
 }
 
 body {
      font-family: Montserrat, sans-serif;
-     color: #ffffff;
-     margin: 0px;
-     padding: 0px;
+     color: #fff;
      box-sizing: border-box;
-     background-color: #252B42;
+     background-color: #252b42;
      min-width: 1280px;
      /* TODO: make with @media */
 }
@@ -86,11 +95,10 @@ ul {
 
 /* Preview */
 .preview {
-     background-image: url(/images/header-background.jpg);
+     background-image: url("/images/header-background.jpg");
      background-repeat: no-repeat;
      background-size: cover;
 }
-
 
 .navigation {
      display: flex;
@@ -148,7 +156,7 @@ ul {
      line-height: 80px;
      letter-spacing: 0.2px;
      padding-bottom: 35px;
-     margin: 0px;
+     margin: 0;
 }
 
 .preview-text {
@@ -157,7 +165,7 @@ ul {
      font-weight: 500;
      font-size: 20px;
      line-height: 30px;
-     margin: 0px;
+     margin: 0;
 }
 
 .preview-btn-container {
@@ -176,25 +184,25 @@ ul {
      align-items: center;
      padding: 10px 36px;
      margin-top: 35px;
-     background: #FFA62B;
+     background: #ffa62b;
      border-radius: 37px;
 }
 
 .empty {
      margin-left: 10px;
      background: none;
-     border: 1px solid #ffffff;
+     border: 1px solid #fff;
 }
 
 .preview-form-container {
-     color: #252B42;
+     color: #252b42;
      width: 248px;
      background-color: #fff;
      border-radius: 10px;
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 40px 40px 0 40px;
+     padding: 40px 40px 0;
 }
 
 .preview-form {
@@ -231,7 +239,7 @@ input {
      padding-bottom: 11px;
      padding-left: 21px;
      margin-top: 12px;
-     border: 1px solid #BDBDBD;
+     border: 1px solid #bdbdbd;
      border-radius: 5px;
 }
 
@@ -244,9 +252,8 @@ div[class$="-graph"] {
      flex-direction: column;
 }
 
-
 .btn {
-     color: #FFFFFF;
+     color: #fff;
      font-family: inherit;
      font-weight: 700;
      font-size: 14px;
@@ -261,14 +268,14 @@ div[class$="-graph"] {
      gap: 10px;
      width: 248px;
      height: 58px;
-     background: #FFA62B;
+     background: #ffa62b;
      border-radius: 5px;
      border: none;
 }
 
 /* Advantages */
-div[class$="-section"]  {
-     padding-top: 80px;
+div[class$="-section"] {
+     padding: 80px 0;
      margin: auto;
 }
 
@@ -276,7 +283,7 @@ div[class$="-text-auto"] {
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin: 0px 93px 80px;
+     margin: 0 93px 80px;
 }
 
 h2[class$="-text-main"] {
@@ -304,8 +311,6 @@ h2[class$="-text-main"] {
      gap: 30px;
      width: 100%;
      margin: 0 auto;
-     padding-bottom: 80px;
-
 }
 
 .card-item {
@@ -339,7 +344,7 @@ h2[class$="-text-main"] {
 }
 
 .card-name {
-     color: #252B42;
+     color: #252b42;
      font-weight: 700;
      font-size: 16px;
      line-height: 24px;
@@ -356,23 +361,74 @@ h2[class$="-text-main"] {
 }
 
 .card-more {
-     color: #00A0C1;
+     color: #00a0c1;
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
      text-decoration: none;
 }
 
+/* Services */
+.services-text-main {
+     text-align: center;
+}
+
+.services-section::after {
+     content: "";
+     display: block;
+     width: 100%;
+     height: 465px;
+     background-color: rgb(22 105 122 / 50%);
+     margin-top: -385px;
+}
+
+iframe {
+     display: flex;
+     justify-content: center;
+     width: 877px;
+     height: 442px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+/* Responses */
+.responses-pic {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     width: 100%;
+     margin: 0 auto;
+}
+
 /* Team */
+.our-team {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+.member-photo {
+     margin-bottom: -5px;
+}
+
 .member-info {
      background-color: #fff;
+     text-align: center;
+     padding-top: 30px;
 }
 
 .member-name {
-     color: #252B42;
+     color: #252b42;
      font-weight: 700;
      font-size: 16px;
      line-height: 24px;
+     margin: 0;
 }
 
 .member-post {
@@ -380,17 +436,55 @@ h2[class$="-text-main"] {
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
+     margin: 5px 0;
+}
+
+.member-social {
+     list-style-type: none;
+     display: flex;
+     margin: 0 auto;
+     padding-bottom: 30px;
+     align-items: center;
+     justify-content: center;
+     gap: 15px;
 }
 
 /* Order */
 .order {
-     background-image: url(/images/order-background.jpg);
+     background-image: url("/images/order-background.jpg");
      background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+}
+
+.contact {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.1px;
+     padding-top: 40px;
+}
+
+.order-form {
+     display: flex;
+     flex-flow: row wrap;
+     width: 602px;
+     padding-top: 40px;
 }
 
 /* Consult promo */
 .consult-promo {
+     width: 100%;
      background-color: #fff;
+}
+
+.consult-wrap {
+     width: 73%;
+     display: flex;
+     margin: 0 auto;
+     padding: 40px 0;
+     align-items: center;
+     justify-content: space-between;
 }
 
 .consult {
@@ -398,7 +492,8 @@ h2[class$="-text-main"] {
      font-size: 24px;
      line-height: 32px;
      letter-spacing: 0.1px;
-     color: #252B42;
+     color: #252b42;
+     margin: 0;
 }
 
 .consult-idiom {
@@ -407,6 +502,11 @@ h2[class$="-text-main"] {
      line-height: 20px;
      letter-spacing: 0.2px;
      color: #737373;
+     margin: 0;
+}
+
+.consult-btn {
+     margin: 0;
 }
 
 /* Footer */
@@ -423,7 +523,7 @@ h2[class$="-text-main"] {
      font-size: 14px;
      line-height: 24px;
      letter-spacing: 0.2px;
-     color: #BDBDBD;
+     color: #bdbdbd;
 }
 
 .lorem {
@@ -431,5 +531,5 @@ h2[class$="-text-main"] {
      font-size: 12px;
      line-height: 28px;
      letter-spacing: 0.2px;
-     color: #BDBDBD;
+     color: #bdbdbd;
 }
