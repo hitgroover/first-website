@@ -242,39 +242,38 @@
     </div>
 
     <div class="order">
-        <div class="content-wrapper">
-            <p class="contact">Contact Us</p>
-            <h2 class="order-text-main">Make an Appointment</h2>
-            <form class="order-form">
-                <div>
-                    <input type="text" id="name" name="user_name" placeholder="Full Name">
+        <div class="content-wrapper desctop-width">
+            
+                <p class="contact">Contact Us</p>
+                <h2 class="order-text-main">Make an Appointment</h2>
+                <form class="order-form">
+                <div class="order-form-top">
+                    <input class="order-form-input" type="text" id="name" name="user_name" placeholder="Full Name">
+                    
+                    <input class="order-form-input" type="email" id="mail" name="user_email" placeholder="example@gmail.com">
                 </div>
+                <div class="order-form-bottom">
+                    <input class="order-form-input" type="text" name="department" id="department" list="suggestion" placeholder="Please Select">
+                    <datalist id="suggestion">
+                        <option>Please Select</option>
+                        <option>Please Select</option>
+                        <option>Please Select</option>
+                    </datalist>
 
-                <div>
-                    <input type="email" id="mail" name="user_email" placeholder="example@gmail.com">
+                    <input class="order-form-input" type="text" name="time" id="time" list="time-suggestion" placeholder="4:00 Available">
+                    <datalist id="time-suggestion">
+                        <option>4:00 Available</option>
+                        <option>4:00 Available</option>
+                        <option>4:00 Available</option>
+                    </datalist>
                 </div>
+                        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                    
 
-                <input type="text" name="department" id="department" list="suggestion" placeholder="Please Select">
-                <datalist id="suggestion">
-                    <option>Please Select</option>
-                    <option>Please Select</option>
-                    <option>Please Select</option>
-                </datalist>
+                    <button class="btn order-btn" type="submit">Book Appointment</button>
 
-                <input type="text" name="time" id="time" list="time-suggestion" placeholder="4:00 Available">
-                <datalist id="time-suggestion">
-                    <option>4:00 Available</option>
-                    <option>4:00 Available</option>
-                    <option>4:00 Available</option>
-                </datalist>
-
-                <div>
-                    <textarea id="msg" name="user_message" placeholder="Message"></textarea>
-                </div>
-
-                <button class="btn" type="submit">Book Appointment</button>
-
-            </form>
+                </form>
+            
         </div>
     </div>
 
@@ -291,7 +290,7 @@
 
 
     <footer class="footer">
-        <div class="social-footer">
+        <div class="copyright">
             <a href="#" class="logo">Sprivaten</a>
             <ul class="footer-social">
                 <li class="footer-social-item">
@@ -319,7 +318,7 @@
         <div class="footer-info">
             <ul class="footer-info-items">
                 <li class="footer-info-title">
-                    Company Info <ul class="info-title-more">
+                    <p class="footer-caption">Company Info</p> <ul class="info-title-more">
                         <li><a href="#" class="title-more-link">About Us</a></li>
                         <li><a href="#" class="title-more-link">Carrier</a></li>
                         <li><a href="#" class="title-more-link">We are hiring</a></li>
@@ -328,7 +327,7 @@
                 </li>
 
                 <li class="footer-info-title">
-                    Legal <ul class="info-title-more">
+                    <p class="footer-caption">Legal</p> <ul class="info-title-more">
                         <li><a href="#" class="title-more-link">About Us</a></li>
                         <li><a href="#" class="title-more-link">Carrier</a></li>
                         <li><a href="#" class="title-more-link">We are hiring</a></li>
@@ -337,7 +336,7 @@
                 </li>
 
                 <li class="footer-info-title">
-                    Features <ul class="info-title-more">
+                    <p class="footer-caption">Features</p> <ul class="info-title-more">
                         <li><a href="#" class="title-more-link">Business Marketing</a></li>
                         <li><a href="#" class="title-more-link">User Analytic</a></li>
                         <li><a href="#" class="title-more-link">Live Chat</a></li>
@@ -346,7 +345,7 @@
                 </li>
 
                 <li class="footer-info-title">
-                    Resources <ul class="info-title-more">
+                    <p class="footer-caption">Resources</p> <ul class="info-title-more">
                         <li><a href="#" class="title-more-link">IOS & Android</a></li>
                         <li><a href="#" class="title-more-link">Watch a Demo</a></li>
                         <li><a href="#" class="title-more-link">Customers</a></li>
@@ -355,9 +354,9 @@
                 </li>
 
                 <li class="footer-info-title">
-                    Get In Touch
-                    <div>
-                        <input type="email" id="mail" name="user_email">
+                    <p class="footer-caption">Get In Touch</p>
+                    <div class="footer-form">
+                        <input class="submit-form" type="email" id="mail" name="user_email" placeholder="Your Email">
                         <button type="submit" class="submit btn">Subscribe</button>
                     </div>
                     <p class="lorem">Lorem impsum dolor amit</p>
