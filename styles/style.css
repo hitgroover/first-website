@@ -1,72 +1,79 @@
 /* Fonts */
+
 /* montserrat-regular - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 400;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-regular.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-600 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 600;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-600.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-600.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-600.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-500 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 500;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-500.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-500.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-700 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 700;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-700.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-700.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-800 - latin */
 @font-face {
-     font-family: 'Montserrat';
+     font-family: Montserrat;
      font-style: normal;
      font-weight: 800;
-     src: local(''),
-          url('../fonts/montserrat-v25-latin-800.woff2') format('woff2'),
-          /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/montserrat-v25-latin-800.woff') format('woff');
+     src:
+          local(""),
+          url("../fonts/montserrat-v25-latin-800.woff2") format("woff2"),
+          url("../fonts/montserrat-v25-latin-800.woff") format("woff");
+
      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 body {
      font-family: Montserrat, sans-serif;
-     color: #ffffff;
-     margin: 0px;
-     padding: 0px;
+     color: #fff;
+     margin: 0;
+     padding: 0;
      box-sizing: border-box;
-     background-color: #252B42;
+     background-color: #252b42;
      min-width: 1280px;
+
      /* TODO: make with @media */
 }
 
@@ -86,11 +93,10 @@ ul {
 
 /* Preview */
 .preview {
-     background-image: url(/images/header-background.jpg);
+     background-image: url("/images/header-background.jpg");
      background-repeat: no-repeat;
      background-size: cover;
 }
-
 
 .navigation {
      display: flex;
@@ -148,7 +154,7 @@ ul {
      line-height: 80px;
      letter-spacing: 0.2px;
      padding-bottom: 35px;
-     margin: 0px;
+     margin: 0;
 }
 
 .preview-text {
@@ -157,7 +163,7 @@ ul {
      font-weight: 500;
      font-size: 20px;
      line-height: 30px;
-     margin: 0px;
+     margin: 0;
 }
 
 .preview-btn-container {
@@ -176,25 +182,25 @@ ul {
      align-items: center;
      padding: 10px 36px;
      margin-top: 35px;
-     background: #FFA62B;
+     background: #ffa62b;
      border-radius: 37px;
 }
 
 .empty {
      margin-left: 10px;
      background: none;
-     border: 1px solid #ffffff;
+     border: 1px solid #fff;
 }
 
 .preview-form-container {
-     color: #252B42;
+     color: #252b42;
      width: 248px;
      background-color: #fff;
      border-radius: 10px;
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 40px 40px 0 40px;
+     padding: 40px 40px 0;
 }
 
 .preview-form {
@@ -231,7 +237,7 @@ input {
      padding-bottom: 11px;
      padding-left: 21px;
      margin-top: 12px;
-     border: 1px solid #BDBDBD;
+     border: 1px solid #bdbdbd;
      border-radius: 5px;
 }
 
@@ -244,9 +250,8 @@ div[class$="-graph"] {
      flex-direction: column;
 }
 
-
 .btn {
-     color: #FFFFFF;
+     color: #fff;
      font-family: inherit;
      font-weight: 700;
      font-size: 14px;
@@ -261,13 +266,13 @@ div[class$="-graph"] {
      gap: 10px;
      width: 248px;
      height: 58px;
-     background: #FFA62B;
+     background: #ffa62b;
      border-radius: 5px;
      border: none;
 }
 
 /* Advantages */
-div[class$="-section"]  {
+div[class$="-section"] {
      max-width: 1440px;
      padding-top: 80px;
      margin: auto;
@@ -277,7 +282,7 @@ div[class$="-text-auto"] {
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin: 0px 93px 80px;
+     margin: 0 93px 80px;
 }
 
 h2[class$="-text-main"] {
@@ -306,7 +311,6 @@ h2[class$="-text-main"] {
      width: 100%;
      margin: 0 auto;
      padding-bottom: 80px;
-
 }
 
 .card-item {
@@ -340,7 +344,7 @@ h2[class$="-text-main"] {
 }
 
 .card-name {
-     color: #252B42;
+     color: #252b42;
      font-weight: 700;
      font-size: 16px;
      line-height: 24px;
@@ -357,7 +361,7 @@ h2[class$="-text-main"] {
 }
 
 .card-more {
-     color: #00A0C1;
+     color: #00a0c1;
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
@@ -377,10 +381,10 @@ h2[class$="-text-main"] {
      position: absolute;
      left: 0;
      top: 409px;
-     width: 100%; 
+     width: 100%;
      height: 407px;
      margin: 0;
-     background-color: rgba(22, 105, 122, .5);
+     background-color: rgb(22 105 122 / 50%);
      z-index: -1;
 }
 
@@ -390,7 +394,7 @@ iframe {
      width: 877px;
      height: 442px;
      margin-left: auto;
-     margin-right: auto;  
+     margin-right: auto;
 }
 
 /* Responses */
@@ -404,7 +408,6 @@ iframe {
      margin: 0 auto;
      padding-bottom: 80px;
 }
-
 
 /* Team */
 .our-team {
@@ -429,7 +432,7 @@ iframe {
 }
 
 .member-name {
-     color: #252B42;
+     color: #252b42;
      font-weight: 700;
      font-size: 16px;
      line-height: 24px;
@@ -441,7 +444,7 @@ iframe {
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
-     margin: 5px 0 5px;
+     margin: 5px 0;
 }
 
 .member-social {
@@ -456,7 +459,7 @@ iframe {
 
 /* Order */
 .order {
-     background-image: url(/images/order-background.jpg);
+     background-image: url("/images/order-background.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      width: 100%;
@@ -472,13 +475,10 @@ iframe {
 
 .order-form {
      display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
+     flex-flow: row wrap;
      width: 602px;
      padding-top: 40px;
 }
-
-
 
 /* Consult promo */
 .consult-promo {
@@ -500,7 +500,7 @@ iframe {
      font-size: 24px;
      line-height: 32px;
      letter-spacing: 0.1px;
-     color: #252B42;
+     color: #252b42;
      margin: 0;
 }
 
