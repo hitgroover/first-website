@@ -76,6 +76,7 @@ body {
      box-sizing: border-box;
      background-color: #252b42;
      min-width: 1280px;
+
      /* TODO: make with @media */
 }
 
