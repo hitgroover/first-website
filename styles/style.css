@@ -70,19 +70,23 @@
      padding: 0;
 }
 
+header {
+     width: 100%;
+}
+
 body {
      font-family: Montserrat, sans-serif;
      color: #fff;
      box-sizing: border-box;
      background-color: #252b42;
-     min-width: 1280px;
-
-     /* TODO: make with @media */
 }
 
 .content-wrapper {
-     max-width: 1440px;
+     max-width: 1050px;
      margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
 h2 {
@@ -92,6 +96,10 @@ h2 {
 ul {
      margin: 0;
      padding: 0;
+}
+
+a {
+     text-decoration: none;
 }
 
 /* Preview */
@@ -127,13 +135,23 @@ ul {
      align-items: center;
 }
 
-.menu-items {
-     color: inherit;
+.menu-item {
      font-weight: 600;
      font-size: 14px;
      line-height: 24px;
-     text-decoration: none;
      margin: 0 10.5px;
+}
+
+.menu-item:last-of-type {
+     margin-right: 0;
+}
+
+.menu-link {
+     color: inherit;
+}
+
+.menu-items-last {
+     margin-right: 0;
 }
 
 .preview-wrap {
@@ -501,6 +519,11 @@ iframe {
      line-height: 24px;
      letter-spacing: 0.1px;
      padding-top: 40px;
+     width: 100%;
+}
+
+.order-text-main {
+     width: 100%;
 }
 
 .order-form {
@@ -509,23 +532,22 @@ iframe {
      gap: 20px;
      width: 57%;
      padding-top: 40px;
+     margin: 0 auto 0 0;
 }
 
-.order-form-top {
+.order-form-line {
      display: flex;
-     gap: 20px;
+     flex-direction: row;
      width: 100%;
 }
 
 .order-form-input {
      margin: 0;
-     width: 33%;
+     width: 50%;
 }
 
-.order-form-bottom {
-     display: flex;
-     gap: 20px;
-     position: relative;
+.order-form-input:first-child {
+     margin-right: 20px;
 }
 
 .arrow-department-order {
@@ -541,7 +563,6 @@ textarea {
      font-size: 14px;
      line-height: 24px;
      letter-spacing: 0.2px;
-     width: 73%;
      height: 140px;
      padding: 11px 0 11px 21px;
      border: 1px solid #bdbdbd;
@@ -557,13 +578,12 @@ textarea {
 .consult-promo {
      width: 100%;
      background-color: #fff;
+     padding: 40px 0;
 }
 
 .consult-wrap {
-     width: 73%;
      display: flex;
-     margin: 0 auto;
-     padding: 40px 0;
+     flex-direction: row;
      align-items: center;
      justify-content: space-between;
 }
@@ -595,9 +615,9 @@ textarea {
      display: flex;
      flex-direction: row;
      margin: 0 auto;
-     width: 73%;
      padding: 40px 0;
      border-bottom: 1px solid rgb(54 64 103);
+     width: 100%;
 }
 
 .footer-social {
@@ -611,15 +631,16 @@ textarea {
 
 .footer-info {
      padding: 70px 0;
+     width: 100%;
 }
 
 .footer-info-items {
+     width: 100%;
      display: flex;
      flex-direction: row;
      list-style-type: none;
-     gap: 30px;
      margin: 0 auto;
-     width: 73%;
+     justify-content: space-between;
 }
 
 .footer-info-title {
@@ -691,11 +712,12 @@ textarea {
 
 @media (max-width: 415px) {
      .content-wrapper {
-          width: 28%;
+          width: 80%;
      }
 
      .header {
           background-color: #252b42;
+          width: 100%;
      }
 
      .navigation {
@@ -821,6 +843,31 @@ textarea {
           align-items: center;
      }
 
+     h2[class^="order-text-"] {
+          text-align: left;
+     }
+
+     .order-form {
+          width: 100%;
+     }
+
+     .order-form-line {
+          flex-wrap: wrap;
+     }
+
+     .order-form-input {
+          width: 100%;
+          margin: 0;
+     }
+
+     .order-form-input:first-child {
+          margin: 0 0 20px;
+     }
+
+     .order-btn {
+          width: 100%;
+     }
+
      .consult-wrap {
           flex-flow: column;
           align-items: center;
@@ -857,5 +904,9 @@ textarea {
      .footer-info-items {
           flex-direction: column;
           gap: 30px;
+     }
+
+     .submit-form {
+          width: 100%;
      }
 }
